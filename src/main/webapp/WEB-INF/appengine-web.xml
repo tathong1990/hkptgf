@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <runtime>java8</runtime>
+    <threadsafe>true</threadsafe>
+    <system-properties>
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+        <property name="ae-cloudsql.cloudsql-database-url" value="jdbc:google:mysql://face-comparison:asia-northeast1:face-comparison/faceComparison?user=root&amp;password=30243100" />
+        <property name="ae-cloudsql.local-database-url" value="jdbc:mysql://google/ptgf?cloudSqlInstance=jasoncloudstorage-179715:asia-east1:ptgfsql123&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=root&amp;password=30243100&amp;useSSL=false" />
+        <property name="ae-cloudsql.local2-database-url" value="jdbc:mysql://104.198.87.50:3306/faceComparison?user=root&amp;password=30243100" />
+        <property name="bucket" value=" face-comparison.appspot.com"/>
+        <property name="azureFaceIdKey" value ="fb7303215021484f8269ef5ae30a369b"/>
+        <property name="azureFaceURI" value ="https://southeastasia.api.cognitive.microsoft.com/face/v1.0"/>
+        <property name="ptgfTable" value ="faceComparison"/>
+        <property name="ptgfFaceList" value ="ptgf"/>
+        <property name="ccFaceList" value ="hkcc"/>
+        <property name="googleStoreage" value ="https://storage.googleapis.com//"/>
+        <property name="storgeTempImage" value ="tempImage/"/>
+        <property name="displayLimit" value ="32"/>
+    </system-properties>
+
+    <sessions-enabled>true</sessions-enabled>
+</appengine-web-app>
